@@ -1,9 +1,12 @@
 package algorithms;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ArraySorter {
 
-  public static int[] sortArray(int[] data) {
-
+  static int[] sortArray(int[] data) {
+    List<Integer> outputData = new ArrayList<>(data.length);
     return new int[data.length];
   }
 }
