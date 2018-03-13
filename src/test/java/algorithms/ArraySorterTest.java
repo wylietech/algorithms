@@ -7,11 +7,19 @@ import org.junit.jupiter.api.Test;
 class ArraySorterTest {
 
   @Test
-  void canSortArray() {
+  void canBubbleSortArray() {
     int[] testData = {7, 1, 3, 2, 6, 9, 4, 8, 5, 10};
-    int[] results = ArraySorter.sortArray(testData);
+    int[] results = ArraySorter.bubbleSortArray(testData);
     checkArrayIsSorted(results);
   }
+
+  @Test
+  void canInsertSortArray() {
+    int[] testData = {7, 1, 3, 2, 6, 9, 4, 8, 5, 10};
+    int[] results = ArraySorter.insertSortArray(testData);
+    checkArrayIsSorted(results);
+  }
+
 
   //Check that the supplied array is correctly sorted
   private void checkArrayIsSorted(int[] data) {
