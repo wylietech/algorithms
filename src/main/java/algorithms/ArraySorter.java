@@ -2,6 +2,35 @@ package algorithms;
 
 public class ArraySorter {
 
+  //Find the smallest item and put it into the first slot
+  //Then iterate with the next slot etc
+  static int[] searchSortArray(int[] data) {
+
+    int minValue;
+    int minValueLocation;
+
+    //Iterate through each slot in the array
+    for (int currentSlot = 0; currentSlot < data.length; currentSlot++) {
+
+      //Search everything forward of this slot and find
+      //the minimum value and its location
+      minValue = Integer.MAX_VALUE;
+      minValueLocation = -1;
+
+      for (int i = currentSlot; i < data.length; i++) {
+        if (data[i] < minValue) {
+          minValue = data[i];
+          minValueLocation = i;
+        }
+      }
+
+      //Swap the value in the current slot for the minimum
+      swapArrayItems(data, currentSlot, minValueLocation);
+    }
+
+    return data;
+  }
+
   static int[] insertSortArray(int[] data) {
     if (data.length < 2) {
       return data;

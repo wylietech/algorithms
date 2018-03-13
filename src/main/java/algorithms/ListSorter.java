@@ -2,9 +2,9 @@ package algorithms;
 
 import java.util.List;
 
-public class ListSorter {
+class ListSorter {
 
-  public static List<Integer> sort(List<Integer> data) {
+  static List<Integer> sort(List<Integer> data) {
     if (data.size() < 2) {
       return data;
     }

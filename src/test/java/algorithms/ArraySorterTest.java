@@ -6,23 +6,31 @@ import org.junit.jupiter.api.Test;
 
 class ArraySorterTest {
 
+  private static final int[] SIMPLE_RANDOM_LIST = {7, 1, 3, 2, 6, 9, 4, 8, 5, 10};
+  private static final int[] REVERSE_SORTED_LIST = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+
   @Test
-  void canBubbleSortArray() {
-    int[] testData = {7, 1, 3, 2, 6, 9, 4, 8, 5, 10};
-    int[] results = ArraySorter.bubbleSortArray(testData);
-    checkArrayIsSorted(results);
+  void canSortUsingSearchAlgorithm() {
+    checkResultIsSorted(ArraySorter.searchSortArray(SIMPLE_RANDOM_LIST));
   }
 
   @Test
-  void canInsertSortArray() {
-    int[] testData = {7, 1, 3, 2, 6, 9, 4, 8, 5, 10};
-    int[] results = ArraySorter.insertSortArray(testData);
-    checkArrayIsSorted(results);
+  void canSortUsingBubbleAlgorithm() {
+    checkResultIsSorted(ArraySorter.bubbleSortArray(SIMPLE_RANDOM_LIST));
   }
 
+  @Test
+  void canISortUsingInsertAlgorithm() {
+    checkResultIsSorted(ArraySorter.insertSortArray(SIMPLE_RANDOM_LIST));
+  }
+
+  @Test
+  void canSortReversedArrayUsingInsertAlgorithm() {
+    checkResultIsSorted(ArraySorter.insertSortArray(REVERSE_SORTED_LIST));
+  }
 
   //Check that the supplied array is correctly sorted
-  private void checkArrayIsSorted(int[] data) {
+  private void checkResultIsSorted(int[] data) {
     //An array with less that two elements must by definition be sorted
     if (data.length < 2) {
       return;
