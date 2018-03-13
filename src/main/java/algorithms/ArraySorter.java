@@ -1,29 +1,33 @@
 package algorithms;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ArraySorter {
 
   //Bubble sort the supplied array
   static int[] sortArray(int[] data) {
-    List<Integer> outputData = new ArrayList<>(data.length);
-
-    for (int i = 0; i < data.length; i++) {
-      outputData.add(i);
+    if (data.length < 2) {
+      return data;
     }
 
-    return new int[0];
-    /*
-    //If less than two then nothing to do
-      if (outputData.size() < 2) {
-        return outputData.toArray();
+    //Bubble sort runs 'in-place' - modifying the original array
+    boolean modified;
+
+    do {
+      modified = false;
+      for (int i = 1; i < data.length; i++) {
+        if (data[i - 1] > data[i]) {
+          swapArrayItems(data, i - 1, i);
+          modified = true;
+        }
       }
-
-    for (int i=0; i< outputData.size() - 1;i++) {
-      if (items(i) > items)
     }
-    */
+    while (modified);
 
+    return data;
+  }
+
+  private static void swapArrayItems(int[] data, int position1, int position2) {
+    int valueAtPosition2 = data[position2];
+    data[position2] = data[position1];
+    data[position1] = valueAtPosition2;
   }
 }
