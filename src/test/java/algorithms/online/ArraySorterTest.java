@@ -1,8 +1,8 @@
-package algorithms;
+package algorithms.online;
 
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.assertj.core.api.Fail.fail;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 class ArraySorterTest {
 

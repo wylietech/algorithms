@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.online;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package algorithms;
+package algorithms.online;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 class StringTokenizerTest {
 
