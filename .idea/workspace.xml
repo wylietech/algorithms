@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f1dbd4a-fff8-49b7-8c2a-a82bdaef7be3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/algorithms/mit/MergeSort.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/algorithms/mit/BitshiftTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/algorithms/mit/MergeSortTest.java" />
+    <list default="true" id="4f1dbd4a-fff8-49b7-8c2a-a82bdaef7be3" name="Default" comment="Added a second shot at a merge sort algorithm with a SubArray class">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/algorithms/mit/MergeSortTwo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/algorithms/mit/MergeSortTwoTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MergeSortTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MergeSortTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/algorithms/mit/MergeSortTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="885">
-              <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+              <caret line="59" column="1" lean-forward="false" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,11 +38,38 @@
       <file leaf-file-name="MergeSort.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/algorithms/mit/MergeSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="1305">
+              <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeSortTwo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/algorithms/mit/MergeSortTwo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1605">
+              <caret line="109" column="4" lean-forward="false" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
+              <folding>
+                <element signature="e#2972#2973#0" expanded="true" />
+                <element signature="e#3009#3010#0" expanded="true" />
+                <element signature="e#3031#3032#0" expanded="true" />
+                <element signature="e#3065#3066#0" expanded="true" />
+                <element signature="e#3087#3088#0" expanded="true" />
+                <element signature="e#3123#3124#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeSortTwoTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/algorithms/mit/MergeSortTwoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,6 +119,8 @@
         <option value="$PROJECT_DIR$/src/test/java/algorithms/mit/BitshiftTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/algorithms/mit/MergeSort.java" />
         <option value="$PROJECT_DIR$/src/test/java/algorithms/mit/MergeSortTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/algorithms/mit/MergeSortTwoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithms/mit/MergeSortTwo.java" />
       </list>
     </option>
   </component>
@@ -276,6 +304,9 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="algorithms.online" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="algorithms.mit" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -289,7 +320,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MergeSortTest.canSortEmptyArray">
+  <component name="RunManager" selected="JUnit.MergeSortTwoTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -310,31 +341,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="MergeSortTest.canPerformSimpleMergeSortWithOddList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="algorithms.mit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="algorithms" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="algorithms.mit" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.mit.MergeSortTest" />
-      <option name="METHOD_NAME" value="canPerformSimpleMergeSortWithOddList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration name="MergeSortTest.canSortAlreadySorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -436,6 +442,31 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="MergeSortTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="algorithms.mit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="algorithms" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="algorithms.mit" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.mit.MergeSortTwoTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -494,19 +525,19 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canPerformSimpleMergeSortWithOddList" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortWithNegatives" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortAlreadySorted" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortSingleItem" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortEmptyArray" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortWithNegatives" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortAlreadySorted" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortSingleItem" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortEmptyArray" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MergeSortTwoTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortEmptyArray" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortSingleItem" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortAlreadySorted" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortWithNegatives" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canPerformSimpleMergeSortWithOddList" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MergeSortTwoTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortEmptyArray" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortSingleItem" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortAlreadySorted" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MergeSortTest.canSortWithNegatives" />
       </list>
     </recent_temporary>
   </component>
@@ -577,16 +608,17 @@
       <option name="project" value="LOCAL" />
       <updated>1530702691418</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added a merge sort algorithm">
+      <created>1531132216233</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1531132216233</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MergeSortTest_canPerformSimpleMergeSortWithOddList - 2018.07.09 at 11h 19m 31s.xml">
-      <configuration name="MergeSortTest.canPerformSimpleMergeSortWithOddList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MergeSortTest_canPerformSimpleMergeSortWithOddList - 2018.07.09 at 11h 20m 28s.xml">
-      <configuration name="MergeSortTest.canPerformSimpleMergeSortWithOddList" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MergeSortTest_canPerformSimpleMergeSortWithOddList - 2018.07.09 at 11h 21m 51s.xml">
       <configuration name="MergeSortTest.canPerformSimpleMergeSortWithOddList" configurationId="JUnit" />
     </history-entry>
@@ -611,6 +643,12 @@
     <history-entry file="MergeSortTest_canSortWithNegatives - 2018.07.09 at 11h 28m 01s.xml">
       <configuration name="MergeSortTest.canSortWithNegatives" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MergeSortTwoTest - 2018.07.09 at 11h 55m 42s.xml">
+      <configuration name="MergeSortTwoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MergeSortTwoTest - 2018.07.09 at 11h 57m 24s.xml">
+      <configuration name="MergeSortTwoTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -626,18 +664,18 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32791328" sideWeight="0.48541668" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32791328" sideWeight="0.4826389" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41869918" sideWeight="0.24097222" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32791328" sideWeight="0.5173611" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18055555" sideWeight="0.4926004" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="true" show_stripe_button="true" weight="0.2208672" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="72" y="342" width="1400" height="347" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="true" show_stripe_button="true" weight="0.38346884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="72" y="342" width="1400" height="347" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.4975669" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2701389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41869918" sideWeight="0.7590278" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13956639" sideWeight="0.7590278" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -683,7 +721,9 @@
     <MESSAGE value="Implemented a bubble sort ListSorter" />
     <MESSAGE value="Added some regex tests" />
     <MESSAGE value="Added a search sort algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a search sort algorithm" />
+    <MESSAGE value="Added a merge sort algorithm" />
+    <MESSAGE value="Added a second shot at a merge sort algorithm with a SubArray class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a second shot at a merge sort algorithm with a SubArray class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -745,23 +785,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/algorithms/online/ArraySorterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.1/junit-platform-commons-1.0.1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/algorithms.ArraySorterTest.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1089,7 +1112,7 @@
         <state relative-caret-position="390">
           <caret line="37" column="61" lean-forward="false" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1158,23 +1181,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithms/mit/MergeSort.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/algorithms/mit/MergeSortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="885">
+          <caret line="59" column="1" lean-forward="false" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/algorithms/mit/MergeSortTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithms/mit/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        <state relative-caret-position="1305">
+          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithms/mit/MergeSortTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="109" column="4" lean-forward="false" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
+          <folding>
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3009#3010#0" expanded="true" />
+            <element signature="e#3031#3032#0" expanded="true" />
+            <element signature="e#3065#3066#0" expanded="true" />
+            <element signature="e#3087#3088#0" expanded="true" />
+            <element signature="e#3123#3124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/algorithms/mit/MergeSortTwoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
